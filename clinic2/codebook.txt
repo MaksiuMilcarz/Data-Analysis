@@ -1,0 +1,68 @@
+id
+    Unique identifier for each house (integer between 0 and 100000).
+
+zipcode
+    Zip code indicating the area where the house is located.
+    Possible values: 3520, 3525, 3800.
+    This may correlate with build year and other neighborhood characteristics.
+
+lot_len
+    Length of the land plot in meters.
+    Range: 5.0 – 100.0.
+
+lot_width
+    Width of the land plot in meters.
+    Range: 5.0 – 100.0.
+
+lot_area
+    Total area of the land plot in square meters.
+    Can be computed as: lot_len × lot_width.
+
+house_area
+    Living area of the house in square meters.
+    Around 30 m² indicates a very small house, while 200 m² or more indicates a large house.
+
+garden_size
+    Size of the garden in square meters.
+
+balcony
+    Number of balconies.
+    Common values: 0, 1, or 3.
+
+x_coor
+    X-coordinate of the house location.
+    Integer between 2000 and 3000.
+
+y_coor
+    Y-coordinate of the house location.
+    Integer between 5000 and 6000.
+
+buildyear
+    Year the house was built.
+    Oldest houses date back to around 1100, but most were built in the 20th and 21st century.
+
+bathrooms
+    Number of bathrooms in the house.
+    Most houses have 1; some have 2 or 3.
+
+taxvalue
+    Government-estimated conservative house value (in euros).
+    Range: 50,000 – 1,000,000.
+    Rounded to the nearest 100 euros.
+    Typically slightly lower than the retail value.
+
+retailvalue
+    Market value of the house (in euros).
+    Range: 50,000 – 1,000,000.
+    Rounded to the nearest 1,000 euros.
+
+energy_eff
+    Energy efficiency indicator:
+        1 = energy efficient
+        0 = not energy efficient
+    Used for climate policy goals in Utrecht.
+
+monument
+    Indicator of whether the house has monumental (historical/architectural) value.
+    Such houses are often older and architecturally unique.
+    This variable is difficult to assess manually and is sometimes predicted from other features.
